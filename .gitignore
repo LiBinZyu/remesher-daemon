@@ -24,8 +24,6 @@ vendor/QuadRemesher1.3.0.3452/**
 !vendor/QuadRemesher1.3.0.3452/
 vendor/blender-4.5.3-windows-x64/**
 !vendor/blender-4.5.3-windows-x64/
-vendor/blenderTemplate/**
-!vendor/blenderTemplate/
 
 !.gitkeep
 
