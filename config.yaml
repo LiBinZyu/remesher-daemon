@@ -1,0 +1,10 @@
+paths:
+  input_dir: "test/in_zips"
+  output_dir: "test/out_zips"
+  work_dir: "test/wip"
+  database_file: "test/db/tasks.sqlite"
+  xremesh_executable: "vendor/QuadRemesher1.3.0.3452/EngineWin/xremesh.exe"
+  blender_executable: "vendor/blender-4.5.3-windows-x64/blender.exe"
+
+main_loop:
+  sleep_interval_seconds: 5
