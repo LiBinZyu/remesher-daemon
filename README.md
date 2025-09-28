@@ -47,10 +47,25 @@
 
 ## 使用方法
 1. 配置`config.yaml`，填写输入、输出、工作目录、可执行文件路径等。
-2. 启动主程序：
+2. 下载 [vendor.zip](https://pan.baidu.com/s/1RuzcdCjs6UoGFLoHj6lR_A?pwd=wi3b)，并解压到 vendor 目录，里面包含了 blender 和 xremesh 的可执行文件。解压后应该有以下目录：
+  ```
+  vendor/
+  ├── QuadRemesher1.3.0.3452/
+  | ├── ...
+  | └── EngineWin/
+  |   ├── ...
+  |   └──xremesh.exe
+  └── blender-4.5.3-windows-x64/
+    ├── ...
+    └── blender.exe
+
+  ```
+
+3. 安装依赖，启动主程序：
    ```bash
+   pip install -r requirements.txt
    python main.py
    ```
-3. 将待处理的zip包放入`test/in_zips/`（或配置的input_dir）。
-4. 程序会自动处理，结果zip包输出到`test/out_zips/`（或配置的output_dir）。
-5. 处理过程和异常会记录在`daemon.log`。work_dir目录下会自动创建临时目录，处理完成后会自动清理，里面可以查看blender 的log。
+4. 将待处理的zip包放入`test/in_zips/`（或配置的input_dir）。
+5. 程序会自动处理，结果zip包输出到`test/out_zips/`（或配置的output_dir）。
+6. 处理过程和异常会记录在`daemon.log`。work_dir目录下会自动创建临时目录，处理完成后会自动清理，里面可以查看blender 的log。
